@@ -11,9 +11,9 @@ const error = 'FS operation failed';
 const success = 'File was created!';
 
 export const create = async () => {
-  const folderPath = path.join(__dirname, 'files', 'fresh.txt');
+  const rootPath = path.join(__dirname, 'files', 'fresh.txt');
 
-  fs.writeFile(folderPath, content, { flag: 'wx' }, (err) => {
+  fs.writeFile(rootPath, content, { flag: 'wx' }, (err) => {
     if (err) {
       throw new Error(error);
     }
