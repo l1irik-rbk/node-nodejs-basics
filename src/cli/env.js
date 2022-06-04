@@ -10,3 +10,5 @@ export const parseEnv = () => {
   console.log(string);
 };
 parseEnv();
+
+// RSS_name1=value1  RSS_name2=value2 node env
