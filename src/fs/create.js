@@ -14,9 +14,7 @@ export const create = async () => {
     const rootPath = path.join(__dirname, 'files', 'fresh.txt');
     await writeFile(rootPath, content, { flag: 'wx' });
   } catch (err) {
-    if (err) {
-      throw new Error(error);
-    }
+    throw new Error(error);
   }
 };
 create();

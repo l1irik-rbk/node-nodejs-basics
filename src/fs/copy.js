@@ -21,9 +21,7 @@ export const copy = async () => {
       await copyFile(oldFilePath, newFilePath);
     }
   } catch (err) {
-    if (err) {
-      throw new Error(error);
-    }
+    throw new Error(error);
   }
 };
 copy();
