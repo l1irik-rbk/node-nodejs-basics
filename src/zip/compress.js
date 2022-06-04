@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import { pipeline } from 'stream';
+import { rm } from 'node:fs/promises';
 import * as path from 'path';
 import * as zlib from 'zlib';
 import * as fs from 'fs';
@@ -21,5 +22,6 @@ export const compress = async () => {
       console.error(err);
     }
   });
+  await rm(inputPath);
 };
 compress();
