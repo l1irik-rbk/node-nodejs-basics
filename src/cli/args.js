@@ -14,3 +14,5 @@ export const parseArgs = () => {
 parseArgs();
 
 // node args --propName value --prop2Name value2
+
+// node src/cli/args.js --propName value --prop2Name value2

@@ -29,3 +29,5 @@ export const spawnChildProcess = async (args) => {
   });
 };
 spawnChildProcess(process.argv.slice(2));
+
+// node src/cp/cp.js 123 456 789

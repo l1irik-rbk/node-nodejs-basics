@@ -12,3 +12,4 @@ export const parseEnv = () => {
 parseEnv();
 
 // RSS_name1=value1  RSS_name2=value2 node env
+// $env:RSS_name1="value1"; $env:RSS_name2="value2"; node src/cli/env.js
