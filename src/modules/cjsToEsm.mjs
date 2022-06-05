@@ -6,10 +6,6 @@ import * as path from 'path';
 import { dirname } from 'path';
 import { release, version } from 'os';
 import { createServer as createServerHttp } from 'http';
-
-// const path = require('path');
-// const { release, version } = require('os');
-// const { createServer: createServerHttp } = require('http');
 import './files/c.js';
 
 const __filename = fileURLToPath(import.meta.url);
