@@ -9,7 +9,7 @@ const __dirname = dirname(__filename);
 export const spawnChildProcess = async (args) => {
   const filePath = path.join(__dirname, 'files', 'script.js');
   const newArgs = [filePath, ...args];
-
+  a;
   const child = spawn('node', newArgs);
 
   child.stdout.on('data', (data) => {
